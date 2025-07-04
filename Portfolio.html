@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musallam Al Balushi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+ <style>
+    :root {
+  --main-bg: #0a1523;
+  --card-bg: #141d2c;
+  --accent: #00a8e8;
+  --highlight: #5ecffb;
+  --text-light: #e0f1ff;
+}
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--main-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #1a1a2e;
+      color: white;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.8em;
+      color: var(--accent);
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+      padding: 5px 10px;
+    }
+    nav a:hover {
+      color: var(--highlight);
+      border-bottom: 2px solid var(--highlight);
+    }
+    #hero {
+      background: linear-gradient(to right, #0d1b2a, #1b263b);
+      text-align: center;
+      padding: 140px 20px;
+    }
+    #hero h1 {
+      font-size: 3.5em;
+      color: var(--accent);
+    }
+    #hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 20px auto;
+      color: #ccc;
+    }
+    .btn {
+      background: var(--highlight);
+      color: #0d1b2a;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    .btn:hover {
+      background: #00b4d8;
+      color: white;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.5em;
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 60px;
+      background: var(--highlight);
+      margin: 10px auto 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .skills-list, .languages-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+    }
+    .skills-list li, .languages-list li {
+      background: #243b55;
+      border: 1px solid var(--accent);
+      border-radius: 20px;
+      padding: 10px 18px;
+      font-weight: 600;
+      color: white;
+    }
+    footer {
+      background: #1a1a2e;
+      color: var(--highlight);
+      text-align: center;
+      padding: 25px 15px;
+    }
+    a {
+      color: var(--highlight);
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      #hero h1 {
+        font-size: 2.2em;
+      }
+      #hero p {
+        font-size: 1em;
+      }
+    }
+
+    .icon-img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Musallam Al Balushi</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Hi, I'm Musallam Al Balushi</h1>
+    <p>Electrical & Computer Engineering Graduate | Software Development & IoT Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Recent graduate in Electrical and Computer Engineering with a minor in Computer Systems and Networks. Open to opportunities in software development, IoT, or IT. Eager to learn and grow through hands-on experience and continuous development.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>BEng. in Electrical and Computer Engineering</strong><br>Sultan Qaboos University, Oman (2018 - 2024)<br>Graduation: May 2024<br>Minor: Computer Systems and Networks<br>Major Courses: Embedded Systems, Computer Networks, Computing Systems and Applications</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <p><strong>Voltamp Transformers Oman SOAC</strong><br>IT Systems Management Intern (July 2023)<br>Location: Rusayl Industrial Estate, Muscat<br>
+      • Learned IP addressing and device connectivity<br>
+      • Created Ethernet cables and physical connections<br>
+      • Understood security and access control</p>
+    </div>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Online Recruitment System</h3>
+    <p><strong>Description:</strong> A web-based platform using AI to automate candidate screening, with smart filtering, ranking, and role-based access.</p>
+    <p><strong>Languages & Tools:</strong></p>
+    <ul class="skills-list">
+      <li><img src="https://img.icons8.com/color/24/000000/html-5--v1.png"/> HTML</li>
+      <li><img src="https://img.icons8.com/color/24/000000/css3.png"/> CSS</li>
+      <li><img src="https://img.icons8.com/color/24/000000/javascript--v1.png"/> JavaScript</li>
+      <li><img src="https://img.icons8.com/color/24/000000/python--v1.png"/> Python</li>
+      <li><img class="icon-img" src="/Pictures/PostgreSQL.png" alt="PostgreSQL Icon"/> PostgreSQL</li>
+      <li><img class="icon-img" src="/Pictures/nodejs.png" alt="Node JS Icon"/> Node JS</li>
+      <li><img class="icon-img" src="/Pictures/express js.png" alt=" Express JS Icon"/> Express JS</li>
+
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Sentiment Analysis Tool</h3>
+    <p><strong>Description:</strong> A tool that classifies Arabic and English text sentiment (positive, negative, or neutral) using NLP models.</p>
+    <p><strong>Languages & Tools:</strong></p>
+    <ul class="skills-list">
+      <li><img src="https://img.icons8.com/color/24/000000/python--v1.png"/> Python</li>
+      <li><img src="https://img.icons8.com/ios-filled/24/00a8e8/brain.png"/> NLP</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>MovieZone</h3>
+    <p><strong>Description:</strong> A personal movie streaming platform with admin control to upload and manage content using Supabase backend.</p>
+    <p><strong>Languages & Tools:</strong></p>
+    <ul class="skills-list">
+        <li><img class="icon-img" src="/Pictures/React.png" alt=" React Icon"/> React</li>
+        <li><img class="icon-img" src="/Pictures/tailwind.png" alt=" Tailwind CSS Icon"/> Tailwind CSS</li>
+        <li><img class="icon-img" src="/Pictures/typescript.png" alt=" TypeScript Icon"/> TypeScript</li>
+        <li><img class="icon-img" src="/Pictures/supabase.png" alt=" Supabase Icon"/> Supabase</li>
+    </ul>
+  </div>
+</section>
+
+  <section id="skills">
+    <h2>Skills & Capabilities</h2>
+    <div class="card">
+      <p><strong>Technical:</strong></p>
+      <ul class="skills-list">
+        <li>Embedded Systems</li><li>IoT</li><li>C/C++</li><li>Python (basic)</li>
+        <li>HTML, CSS, JavaScript, TypeScript</li><li>React</li><li>Node.js</li><li>Express.js (basic)</li>
+        <li>PostgreSQL</li><li>Supabase</li><li>Git & GitHub</li>
+        <li>Ubuntu, Linux, Windows</li><li>VMs, CLI</li><li>AI Tools</li>
+      </ul>
+      <p><strong>Soft Skills:</strong></p>
+      <ul class="skills-list">
+        <li>Communication</li><li>Teamwork</li><li>Leadership</li><li>Report Writing</li><li>Problem Solving</li>
+      </ul>
+    </div>
+    <h3 style="text-align:center; margin-top: 20px; color: var(--accent);">Languages</h3>
+    <ul class="languages-list">
+      <li>Arabic</li>
+      <li>English</li>
+      <li>Baluchi</li>
+      <li>Urdu</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+      <p>• Cisco – Introduction to Networks (2022)<br>
+      • Internal IT Training – Voltamp (2023)<br>
+      • Cisco – Enterprise Networking, Security & Automation (2024)</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:ms23lmlblsh@gmail.com">ms23lmlblsh@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/m-albalushi" target="_blank" rel="noopener noreferrer">github.com/m-albalushi</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/musallam-albalushi" target="_blank" rel="noopener noreferrer">linkedin.com/in/musallam-albalushi</a>
+</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Musallam Al Balushi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
